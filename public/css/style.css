@@ -483,6 +483,12 @@ a:active {
 	height: 10px;
 	background: #f5f5f5;
 }
+.order-line {
+	height: 1px;
+    background-color: darkgray;
+    float: left;
+    width: 100%;
+}
 
 .mui-content-pro {
 	background: #fff;
@@ -1373,4 +1379,8 @@ a:active {
     width: 96%;
     text-align: center;
     height: auto;
+}
+
+.shop-price-wap {
+	text-align: left !important;
 }
