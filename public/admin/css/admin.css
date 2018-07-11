@@ -1,0 +1,12 @@
+.slick-wrap {
+  padding: 3px;
+}
+.img-wrap {
+  height: 325px;
+  display: inline-block;
+}
+.img-size {
+  width: 242px;
+  height: 242px;
+  padding: 3px;
+}
