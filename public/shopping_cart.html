@@ -174,7 +174,47 @@
 			</div>
 		</footer>
 		<script src="js/mui.min.js"></script>
-		<script src="js/style.js"></script>
+		<script src="js/jquery.js"></script>
+		<!-- <script src="js/style.js"></script> -->
+		<script type="text/javascript">
+			(function (mui, doc, jq) {
+				mui('body').on('tap', 'a', function() {
+					document.location.href = this.href;
+				});
+
+				//启用右滑关闭功能
+				mui.init({
+					swipeBack: true //启用右滑关闭功能
+				});
+				mui('.mui-scroll-wrapper').scroll();
+				var slider = mui("#slider");
+				slider.slider({
+					interval: 1000
+				});
+
+				mui.init({
+					swipeBack: true //启用右滑关闭功能
+				});
+
+				mui(".gwc_footer").on('tap','button',function(){
+					location.href = "/shopping_pay.html";
+				});
+
+
+
+
+
+				function allSelect() {
+					if($(":checkbox").attr("checked") != "checked") {
+						$(":checkbox").attr("checked", "checked");
+					} else {
+						$(":checkbox").removeAttr("checked");
+					}
+				}
+
+
+			})(mui, document, jQuery);
+		</script>
 	</body>
 
 </html>

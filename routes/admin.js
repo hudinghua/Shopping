@@ -6,7 +6,6 @@ var fs = require('fs');
 var formidable = require('formidable');
 var fn = require('../common/fn');
 
-/* GET users listing. */
 
 router.get('/getTest',function(req, res, next){
   var result = { success:false, msg:null };
